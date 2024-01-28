@@ -68,7 +68,7 @@ endfunction
 
 set laststatus=2
 
-set statusline=%#StatusLineNC#
+set statusline=%#StatusLineTermNC#
 set statusline+=%{Current_git_branch()}
 set statusline+=%#Visual#
 set statusline+=\ %f
@@ -79,6 +79,7 @@ set statusline+=%y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=[%{&fileformat}]\ 
 set statusline+=%#PmenuSbar#
-set statusline+=\ %p%%
-set statusline+=\ %l:%2v\ 
+set statusline+=\ %p%%\ 
+set statusline+=%#StatusLineNC#
+set statusline+=\ %3l:%-2v\ 
 set statusline+=%0*
