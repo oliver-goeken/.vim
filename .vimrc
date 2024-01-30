@@ -55,6 +55,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 
 " STATUS LINE "
