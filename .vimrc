@@ -44,9 +44,8 @@ nnoremap <Space> <Nop>
 
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFocus<CR>
-nnoremap <C-i> :YcmCompleter GoTo<CR>
+nnoremap <C-p> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
-
 
 " PLUGINS "
 call plug#begin()
@@ -55,6 +54,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'romainl/vim-cool'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
+Plug 'simeji/winresizer'
 
 call plug#end()
 let g:ycm_autoclose_preview_window_after_completion = 1
