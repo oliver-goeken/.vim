@@ -43,6 +43,7 @@ set title
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-t> :NERDTreeFocus<CR>
 nnoremap <C-i> :YcmCompleter GoTo<CR>
+nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
 
 " PLUGINS "
 call plug#begin()
