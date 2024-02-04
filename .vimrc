@@ -45,8 +45,8 @@ nnoremap <Space> <Nop>
 
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFocus<CR>
-nnoremap <Leader>i :YcmCompleter GoTo<CR>
-nnoremap <Leader>u :YcmCompleter GoToAlternateFile<CR>
+nnoremap <C-i> :YcmCompleter GoTo<CR>
+nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
 
 " PLUGINS "
 call plug#begin()
