@@ -38,9 +38,6 @@ set whichwrap+=<,>,[,]
 
 set title
 
-set listchars=tab:\|\ 
-set list
-
 " SHORTCUTS "
 let mapleader = " "
 nnoremap <Space> <Nop>
