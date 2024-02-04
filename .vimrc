@@ -42,7 +42,7 @@ set title
 " SHORTCUTS "
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-t> :NERDTreeFocus<CR>
-nnoremap <C-i> :YcmCompleter GoTo
+nnoremap <C-i> :YcmCompleter GoTo<CR>
 
 " PLUGINS "
 call plug#begin()
