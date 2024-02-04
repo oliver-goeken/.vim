@@ -38,6 +38,8 @@ set whichwrap+=<,>,[,]
 
 set title
 
+set listchars=tab:\|\ 
+set list
 
 " SHORTCUTS "
 let mapleader = " "
@@ -47,6 +49,7 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFocus<CR>
 nnoremap <C-i> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
+
 
 " PLUGINS "
 call plug#begin()
