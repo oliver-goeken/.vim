@@ -52,7 +52,7 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'romainl/vim-cool'
-Plug 'Valloric/YouCompleteMe'
+Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-fugitive'
 Plug 'simeji/winresizer'
 
