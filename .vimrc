@@ -77,6 +77,10 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFocus<CR>
 nnoremap <C-p> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
+nnoremap <C-i> :tabn<CR>
+
+inoremap fj <Esc>
+inoremap jf <Esc>
 
 
 " PLUGINS "
