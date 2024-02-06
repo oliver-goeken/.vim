@@ -8,8 +8,6 @@ filetype indent on
 
 syntax on
 
-set number
-
 set scrolloff=10
 
 set shiftwidth=4
@@ -40,6 +38,26 @@ set whichwrap+=<,>,[,]
 
 set title
 
+" CONDITIONAL RELATIVE LINE NUMBER "
+function RnuOn()
+	set rnu
+	hi LineNr ctermfg=30
+endfunction
+function RnuOff()
+	set nornu
+	hi LineNr ctermfg=179
+endfunction
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | call RnuOn() | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | call RnuOff() | endif
+augroup END
+
+hi LineNrAbove ctermfg=179
+hi LineNrBelow ctermfg=179
+
+
 " SHORTCUTS "
 let mapleader = " "
 nnoremap <Space> <Nop>
@@ -48,6 +66,7 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>t :NERDTreeFocus<CR>
 nnoremap <C-p> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
+
 
 " PLUGINS "
 call plug#begin()
