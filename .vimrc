@@ -18,6 +18,8 @@ set tabstop=4
 
 set linebreak
 
+set wildmenu
+
 set incsearch
 
 set hlsearch
