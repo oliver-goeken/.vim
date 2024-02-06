@@ -38,12 +38,16 @@ set whichwrap+=<,>,[,]
 
 set title
 
+
 " CONDITIONAL RELATIVE LINE NUMBER "
-function RnuOn()
+set nu
+hi LineNr ctermfg=30
+
+function! RnuOn()
 	set rnu
 	hi LineNr ctermfg=30
 endfunction
-function RnuOff()
+function! RnuOff()
 	set nornu
 	hi LineNr ctermfg=179
 endfunction
@@ -56,6 +60,13 @@ augroup END
 
 hi LineNrAbove ctermfg=179
 hi LineNrBelow ctermfg=179
+
+
+" Return to last edit position when opening files (You want this!) "
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+	 \ endif
 
 
 " SHORTCUTS "
