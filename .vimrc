@@ -82,13 +82,6 @@ nnoremap <C-i> :tabn<CR>
 inoremap fj <Esc>
 inoremap jf <Esc>
 
-" these are from the motions helpfile,
-" they make ]] and [[ work to get to { or }
-inoremap [[ ?{<CR>w99[{ 
-inoremap ][ /}<CR>b99]} 
-inoremap ]] j0[[%/{<CR> 
-inoremap [] k$][%?}<CR>
-
 
 " PLUGINS "
 call plug#begin()
