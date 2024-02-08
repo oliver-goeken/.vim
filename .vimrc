@@ -8,8 +8,6 @@ filetype indent on
 
 syntax on
 
-set scrolloff=10
-
 set shiftwidth=4
 
 set tabstop=4
@@ -91,9 +89,11 @@ Plug 'romainl/vim-cool'
 Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-fugitive'
 Plug 'simeji/winresizer'
+Plug 'drzel/vim-scrolloff-fraction'
 
 call plug#end()
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:scrolloff_fraction = 0.30
 
 
 " STATUS LINE "
