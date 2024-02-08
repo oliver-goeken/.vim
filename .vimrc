@@ -37,6 +37,13 @@ set whichwrap+=<,>,[,]
 set title
 
 
+" AUTOCOMMANDS"
+augroup showcursor
+	autocmd!
+	autocmd BufWinEnter * :set cursorline
+augroup END
+
+
 " CONDITIONAL RELATIVE LINE NUMBER "
 set nu
 hi LineNr ctermfg=30
@@ -76,6 +83,8 @@ nnoremap <Leader>t :NERDTreeFocus<CR>
 nnoremap <C-p> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
 nnoremap <C-i> :tabn<CR>
+
+noremap <Leader>c :set cursorline!<CR>
 
 inoremap fj <Esc>l
 inoremap jf <Esc>l
