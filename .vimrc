@@ -95,7 +95,7 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'romainl/vim-cool'
-Plug 'valloric/youcompleteme'
+Plug 'valloric/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 Plug 'simeji/winresizer'
 Plug 'drzel/vim-scrolloff-fraction'
