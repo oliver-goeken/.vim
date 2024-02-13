@@ -99,10 +99,12 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 Plug 'simeji/winresizer'
 Plug 'drzel/vim-scrolloff-fraction'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:scrolloff_fraction = 0.30
+let g:vimwiki_list = [{'path': '~/.vim/wiki'}]
 
 
 " STATUS LINE "
