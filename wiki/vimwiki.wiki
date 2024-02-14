@@ -1,0 +1,20 @@
+=== Vim Wiki Notes ===
+= Typefaces =
+- \*bold text\*
+	*bold*
+- \_italic text\_
+	_italic_
+- these can be combined
+	_*bold and italic*_
+- backticks for code 
+	`code (no syntax)`
+- some additional words are highlighted flashy (TODO, DONE, STARTED, FIXME, etc. [see g:vimwiki-option-rx_todo])
+- \[\[wiki link]]\]
+	[[wiki link]]
+- \[\[link|with description\]\]
+	[[vimwiki|with description]]
+- diary entries accessed with \[\[diary:2024-02-13\]\]
+	[[diary:2024-02-13]]
+- inside a wikilink, put #SYMBOL after the link source to jump to marker on opening file 
+- link directly to things with raw URLS or \[\[file:filename\]\]
+- 

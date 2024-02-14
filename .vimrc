@@ -84,7 +84,8 @@ nnoremap <C-p> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
 nnoremap <C-i> :tabn<CR>
 
-noremap <Leader>c :set cursorline!<CR>
+nnoremap <Leader>c :set cursorline!<CR>
+nmap <Leader>e <C-e>
 
 inoremap fj <Esc>l
 inoremap jf <Esc>l
@@ -105,6 +106,9 @@ call plug#end()
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:scrolloff_fraction = 0.30
 let g:vimwiki_list = [{'path': '~/.vim/wiki'}]
+highlight vimwikiHeader1 ctermfg=1
+highlight vimwikiHeader2 ctermfg=2
+highlight vimwikiHeader3 ctermfg=3
 
 
 " STATUS LINE "
