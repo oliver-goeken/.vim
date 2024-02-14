@@ -96,19 +96,21 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'romainl/vim-cool'
-Plug 'ycm-core/YouCompleteMe.git'
+Plug 'ycm-core/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 Plug 'simeji/winresizer'
 Plug 'drzel/vim-scrolloff-fraction'
-Plug 'vimwiki/vimwiki'
 
 call plug#end()
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:scrolloff_fraction = 0.30
+<<<<<<< HEAD
 let g:vimwiki_list = [{'path': '~/.vim/wiki'}]
 highlight vimwikiHeader1 ctermfg=1
 highlight vimwikiHeader2 ctermfg=2
 highlight vimwikiHeader3 ctermfg=3
+=======
+>>>>>>> dc99214 (Revert "set up and installvimwiki")
 
 
 " STATUS LINE "
