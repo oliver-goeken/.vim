@@ -38,10 +38,6 @@ set title
 
 
 " AUTOCOMMANDS"
-augroup showcursor
-	autocmd!
-	autocmd BufWinEnter * :set cursorline
-augroup END
 
 
 " CONDITIONAL RELATIVE LINE NUMBER "
