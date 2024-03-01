@@ -96,6 +96,8 @@ inoremap jf <Esc>l
 inoremap { {<CR><BS>}<Esc>ko
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
+inoremap ] []
+inoremap ) ()
 
 
 " PLUGINS "
