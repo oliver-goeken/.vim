@@ -38,13 +38,13 @@ set title
 
 
 " AUTOCOMMANDS"
-augroup MyYCMCustom
-  autocmd!
-  autocmd FileType c,cpp let b:ycm_hover = {
-    \ 'command': 'GetHover',
-    \ 'syntax': &filetype
-    \ }
-augroup END
+"augroup MyYCMCustom
+"  autocmd!
+"  autocmd FileType c,cpp let b:ycm_hover = {
+"    \ 'command': 'GetHover',
+"    \ 'syntax': &filetype
+"    \ }
+"augroupEND
 
 
 " CONDITIONAL RELATIVE LINE NUMBER "
@@ -74,7 +74,7 @@ hi LineNrBelow ctermfg=179
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
-	 \ endif
+"	 \ endif
 
 
 " SHORTCUTS "
@@ -89,7 +89,7 @@ nnoremap <C-i> :tabn<CR>
 
 nnoremap <Leader>c :set cursorline!<CR>
 nmap <Leader>e <C-e>
-nmap <leader>d <plug>(YCMHover)
+nmap <Leader>d <plug>(YCMHover)
 
 inoremap fj <Esc>l
 inoremap jf <Esc>l
