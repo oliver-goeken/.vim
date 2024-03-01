@@ -94,6 +94,8 @@ nmap <Leader>d <plug>(YCMHover)
 inoremap fj <Esc>l
 inoremap jf <Esc>l
 inoremap { {<CR><BS>}<Esc>ko
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
 
 
 " PLUGINS "
