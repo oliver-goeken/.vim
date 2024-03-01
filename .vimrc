@@ -38,6 +38,13 @@ set title
 
 
 " AUTOCOMMANDS"
+augroup MyYCMCustom
+  autocmd!
+  autocmd FileType c,cpp let b:ycm_hover = {
+    \ 'command': 'GetHover',
+    \ 'syntax': &filetype
+    \ }
+augroup END
 
 
 " CONDITIONAL RELATIVE LINE NUMBER "
@@ -82,6 +89,7 @@ nnoremap <C-i> :tabn<CR>
 
 nnoremap <Leader>c :set cursorline!<CR>
 nmap <Leader>e <C-e>
+nmap <leader>d <plug>(YCMHover)
 
 inoremap fj <Esc>l
 inoremap jf <Esc>l
