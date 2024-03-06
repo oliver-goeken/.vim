@@ -105,11 +105,12 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'romainl/vim-cool'
-Plug 'ycm-core/YouCompleteMe.git'
+Plug 'ycm-core/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 Plug 'simeji/winresizer'
 Plug 'drzel/vim-scrolloff-fraction'
 Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 let g:ycm_autoclose_preview_window_after_completion = 1
