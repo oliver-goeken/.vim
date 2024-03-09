@@ -113,6 +113,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 
 call plug#end()
+call prop_type_add( 'YCM_HL_parameter', { 'highlight': 'Special'})
+call prop_type_add( 'YCM_HL_variable', { 'highlight': 'Comment'})
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_enable_semantic_highlighting=1
 let g:scrolloff_fraction = 0.30
