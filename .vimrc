@@ -114,6 +114,7 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_enable_semantic_highlighting=1
 let g:scrolloff_fraction = 0.30
 let g:vimwiki_list = [{'path': '~/.vim/wiki'}]
 highlight vimwikiHeader1 ctermfg=1
