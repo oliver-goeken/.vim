@@ -89,6 +89,7 @@ nnoremap <C-i> :tabn<CR>
 
 nnoremap <Leader>c :set cursorline!<CR>
 nmap <Leader>e <C-e>
+nmap <Leader>w <C-w>
 nmap <Leader>d <plug>(YCMHover)
 
 inoremap fj <Esc>l
