@@ -36,6 +36,8 @@ set whichwrap+=<,>,[,]
 
 set title
 
+set shell=zsh
+
 
 " AUTOCOMMANDS"
 "augroup MyYCMCustom
@@ -82,13 +84,13 @@ let mapleader = " "
 nnoremap <Space> <Nop>
 
 nnoremap <Leader>n :NERDTreeToggle<CR>
-nnoremap <Leader>t :NERDTreeFocus<CR>
 nnoremap <C-p> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
 nnoremap <C-i> :tabn<CR>
+nnoremap <Leader>t :below terminal ++rows=7<CR>
 
 nnoremap <Leader>c :set cursorline!<CR>
-nmap <Leader>e <C-e>
+nmap <Leader>e <C-e>ee
 nmap <Leader>w <C-w>
 nmap <Leader>d <plug>(YCMHover)
 
