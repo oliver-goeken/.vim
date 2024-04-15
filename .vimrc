@@ -88,6 +88,7 @@ nnoremap <C-p> :YcmCompleter GoTo<CR>
 nnoremap <C-u> :YcmCompleter GoToAlternateFile<CR>
 nnoremap <C-i> :tabn<CR>
 nnoremap <Leader>t :below terminal ++rows=7<CR>
+nnoremap <Leader>b <Esc>:call ToggleBraceComplete()<CR>i
 
 nnoremap <Leader>c :set cursorline!<CR>
 nmap <Leader>e <C-e>ee
@@ -101,6 +102,25 @@ inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap ] []
 inoremap ) ()
+
+let s:complete_enabled = 1
+function! ToggleBraceComplete()
+	if s:complete_enabled
+		iunmap {
+		iunmap (
+   		iunmap [
+		iunmap ]
+		iunmap )
+		let s:complete_enabled = 0
+	else
+		inoremap { {<CR><BS>}<Esc>ko
+		inoremap ( ()<Esc>i
+   		inoremap [ []<Esc>i
+		inoremap ] []
+		inoremap ) ()
+		let s:complete_enabled = 1
+	endif
+endfunction
 
 
 " PLUGINS "
