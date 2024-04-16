@@ -136,9 +136,18 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 
 call plug#end()
-call prop_type_add( 'YCM_HL_parameter', { 'highlight': 'Special'})
-call prop_type_add( 'YCM_HL_variable', { 'highlight': 'Comment'})
-call prop_type_add( 'YCM_HL_field', { 'highlight': 'Comment'})
+
+let MY_YCM_HIGHLIGHT_GROUP = {
+	\ 'parameter': 'WarningMsg',
+	\ 'field': 'Comment',
+	\ 'variable': 'Special'
+	\ }
+
+for tokenType in keys(MY_YCM_HIGHLIGHT_GROUP)
+	call prop_type_add( 'YCM_HL_' . tokenType, 
+					  \ {'highlight': MY_YCM_HIGHLIGHT_GROUP[ tokenType ] } )
+endfor
+
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_enable_semantic_highlighting=1
 let g:scrolloff_fraction = 0.30
