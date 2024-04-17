@@ -97,35 +97,10 @@ nmap <Leader>d <plug>(YCMHover)
 
 inoremap fj <Esc>l
 inoremap jf <Esc>l
-inoremap { {<CR><BS>}<Esc>ko
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
-inoremap ] []
-inoremap ) ()
-
-let s:complete_enabled = 1
-function! ToggleBraceComplete()
-	if s:complete_enabled
-		iunmap {
-		iunmap (
-   		iunmap [
-		iunmap ]
-		iunmap )
-		let s:complete_enabled = 0
-	else
-		inoremap { {<CR><BS>}<Esc>ko
-		inoremap ( ()<Esc>i
-   		inoremap [ []<Esc>i
-		inoremap ] []
-		inoremap ) ()
-		let s:complete_enabled = 1
-	endif
-endfunction
 
 
 " PLUGINS "
 call plug#begin()
-
 Plug 'scrooloose/nerdtree'
 Plug 'romainl/vim-cool'
 Plug 'ycm-core/YouCompleteMe'
@@ -134,13 +109,13 @@ Plug 'simeji/winresizer'
 Plug 'drzel/vim-scrolloff-fraction'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
-
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 let MY_YCM_HIGHLIGHT_GROUP = {
 	\ 'parameter': 'WarningMsg',
 	\ 'field': 'Comment',
-	\ 'variable': 'Special'
+	\ 'variable': 'Special',
 	\ }
 
 for tokenType in keys(MY_YCM_HIGHLIGHT_GROUP)
