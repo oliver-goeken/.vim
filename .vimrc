@@ -97,7 +97,7 @@ nmap <Leader>d <plug>(YCMHover)
 
 inoremap fj <Esc>l
 inoremap jf <Esc>l
-inoremap /* /**/<Esc>hi
+inoremap /* /*   */<Esc>hhhi
 
 
 " PLUGINS "
